@@ -20,5 +20,7 @@ export default defineNuxtConfig({
   routeRules: {
     "/": { prerender: true },
     "/admin/**": { ssr: false }, // client side rendering
+    "/login": { ssr: false },
+    "/register": { ssr: false },
   },
 });
